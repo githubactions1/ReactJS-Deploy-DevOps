@@ -1,14 +1,62 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Header from './Header';
 import reportWebVitals from './reportWebVitals';
+// import About from './About';
+import Contact from './Contact';
+import Images from './Images';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NoPage from './NoPage';
+import Register from './Register';
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Login from './Login';
+import Home from './Home';
+import Users from './Users';
+import Products from './Products';
+import Productsdetails from './Productsdetails';
+import { AuthProvider } from './auth';
+import PrivateRoute from './PrivateRoute';
+
+const LazyAbout=React.lazy(()=>import("./About"));
+export default function Abc() {
+  return (
+    <AuthProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Header/>}>
+          <Route path="Home" element={<Home />} />
+              <Route index element={<Home/>}/>
+          <Route path="About" element={
+          <React.Suspense fallback="Loading...">
+            <LazyAbout />
+            </React.Suspense>
+          }
+           />
+          <Route path="Products" element={<Products />} />
+             <Route path="/Products/:productId" element={<Productsdetails />} />
+          <Route path="Images" element={<Images/>} />
+          <Route path="contact" element={<Contact/>} />
+          <Route path="Users" element={
+          <PrivateRoute>
+            <Users/>
+            </PrivateRoute>
+          } />
+          <Route path="Register" element={<Register/>} />
+          <Route path="Login" element={<Login/>} />
+          <Route path="*" element={<NoPage/>} />
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    </AuthProvider>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Abc />
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
