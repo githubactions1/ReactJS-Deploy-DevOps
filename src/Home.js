@@ -29,13 +29,13 @@ export default function Home() {
 
 <div className="carousel-inner">
   <div className="carousel-item active">
-  <img src={img1} className="banner" />
+  <img src={img1} className="banner" alt="description of image" />
   </div>
   <div className="carousel-item">
-    <img src={img1} className="banner" />
+    <img src={img1} className="banner" alt="description of image" />
   </div>
   <div className="carousel-item">
-  <img src={img} className="banner" />
+  <img src={img} className="banner" alt="description of image" />
   </div>
 </div>
 
@@ -56,22 +56,22 @@ export default function Home() {
       <div className='row'>
         <div className='col-md-3'>
           <div className=' mr-3'>
-        <img src={img11} className="h-img " />
+        <img src={img11} className="h-img " alt="description of image" />
         </div>
         </div>
         <div className='col-md-3'>
         <div className=' mr-3'>
-        <img src={img22} className="h-img " />
+        <img src={img22} className="h-img " alt="description of image" />
         </div>
         </div>
         <div className='col-md-3 '>
         <div className=' mr-3'>
-        <img src={img33} className="h-img " />
+        <img src={img33} className="h-img " alt="description of image" />
         </div>
         </div>
         <div className='col-md-3'>
         <div className=' mr-3'>
-        <img src={img44} className="h-img " />
+        <img src={img44} className="h-img " alt="description of image" />
         </div>
         </div>
       </div>

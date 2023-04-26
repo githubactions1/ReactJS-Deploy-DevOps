@@ -57,7 +57,7 @@ export default function About() {
         
         </div>
         <div className='col-md-6 mt-3 mb-3'>
-        <img src={about_img} className="about-img" />
+        <img src={about_img} className="about-img" alt="description of image" />
         </div>
       </div>
       </div>

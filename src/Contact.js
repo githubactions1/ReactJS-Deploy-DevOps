@@ -60,7 +60,7 @@ export default function Contact() {
         </div>
         <div className='col-md-6 bestbus-121'>
           <div className='card11'>
-          <img src={about_img} />
+          <img src={about_img} alt="description of image" />
           </div>
         </div>
       </div>

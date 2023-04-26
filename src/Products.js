@@ -44,7 +44,7 @@ e.title.toLowerCase().includes(searchkey)): data;
             <div>
               <Link to={`/Products/${e.id}`} key={e.id}>
                 <article className=''>
-             <img src={e.image} className="product-img" />
+             <img src={e.image} className="product-img" alt="description of image" />
               <div> <b>{e.title}</b></div>
               <div> <b>{e.price}</b></div>
               <div className='text-center btn-div'>

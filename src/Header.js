@@ -10,13 +10,13 @@ export default function Header() {
     <div className=''>
            
       <div className='jsn-air-balloon request_quote'>
-         <img src={request} className="" />
+         <img src={request} className="" alt="description of image" />
       </div>
       <nav className='menu'>
 
         <ul>
           <li className=''>
-          <Link to="Home"><img src={logo} className="logo-img" /></Link>       
+          <Link to="Home"><img src={logo} className="logo-img" alt="description of image" /></Link>       
           </li>
           <li className='menu-n'>
           <Link to="Home">Home</Link>

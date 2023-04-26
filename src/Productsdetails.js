@@ -24,7 +24,7 @@ export default function ProductsDetails() {
 
          <div className='col-md-6  product-details-grid'>
          <div>
-         <img src={data.image} className="product-img" />
+         <img src={data.image} className="product-img" alt="description of image"/>
          </div>
          </div>
 
