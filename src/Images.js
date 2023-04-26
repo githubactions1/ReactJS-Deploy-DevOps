@@ -31,7 +31,7 @@ export default function Images() {
             <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="flip-box-front">
-             <Link to={e.thumbnailUrl} target='_blank'><img src={e.thumbnailUrl} className="product-img" alt='description of image' /></Link>             
+             <Link to={e.thumbnailUrl} target='_blank'><img src={e.thumbnailUrl} className="product-img" alt='' /></Link>             
                </div>
             <div class="flip-box-back">
             <h2>Paris</h2>
