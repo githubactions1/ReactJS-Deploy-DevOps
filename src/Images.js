@@ -2,7 +2,7 @@
 import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Images() {
   const [data,setData]=useState([])

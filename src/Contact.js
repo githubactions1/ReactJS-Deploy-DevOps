@@ -1,13 +1,13 @@
 import React, { useEffect,useState } from 'react'
 import Axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom';
-import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
+// import Form from 'react-bootstrap/Form';
 import about_img from './images/about.avif'
 import Footer from './Footer';
 
 export default function Contact() {
     
-  const redirect = useNavigate();
+  // const redirect = useNavigate();
   const [data,setData]=useState({name:"",mobile:"",email:"",password:""})
 
   const inputHandler=(e)=>{

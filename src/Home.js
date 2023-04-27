@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from './Footer'
+//import Footer from './Footer'
 import img from "./images/s2.jpg"
 import img1 from "./images/s3.jpg"
 import Products from './Products'

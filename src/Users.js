@@ -1,8 +1,8 @@
 import React, { useEffect,useState } from 'react'
 import Axios from 'axios';
 import Footer from './Footer';
-import { v4 as uuidv4 } from 'uuid';
-import { Link, useNavigate } from 'react-router-dom';
+// import { v4 as uuidv4 } from 'uuid';
+import { useNavigate } from 'react-router-dom';
 import Register from './Register';
 import { useAuth } from './auth';
 import { Notyf } from 'notyf';

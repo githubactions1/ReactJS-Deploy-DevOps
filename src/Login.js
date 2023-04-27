@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Link, useNavigate,Navigate } from 'react-router-dom';
+import { useNavigate,Navigate } from 'react-router-dom';
 import Footer from './Footer';
 import { useAuth } from './auth';
 import { Notyf } from 'notyf';

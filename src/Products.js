@@ -1,8 +1,8 @@
 import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
-import { Outlet, Link } from "react-router-dom";
-import Select from 'react-select'
+import { Link } from "react-router-dom";
+// import Select from 'react-select'
 
 export default function Products() {
     

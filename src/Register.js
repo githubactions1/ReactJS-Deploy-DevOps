@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import Form from 'react-bootstrap/Form';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { v4 as uuidv4 } from 'uuid';
-import Footer from './Footer';
+// import { v4 as uuidv4 } from 'uuid';
+// import Footer from './Footer';
 import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css'; // for React, Vue and Svelte
 
@@ -13,7 +13,7 @@ export default function Register(props) {
 
   
   const [data,setData]=useState({name:"",mobile:"",email:"",password:""})
-  const [isEdit, setIsEdit] =useState({name:"",mobile:"",email:"",password:""})
+  const [isEdit] =useState({name:"",mobile:"",email:"",password:""})
 
   const notyf = new Notyf({
     duration: 3000,
