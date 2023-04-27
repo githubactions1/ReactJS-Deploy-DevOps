@@ -1,6 +1,6 @@
 import React, { useEffect,useState } from 'react'
 import Axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 // import Form from 'react-bootstrap/Form';
 import about_img from './images/about.avif'
 import Footer from './Footer';
